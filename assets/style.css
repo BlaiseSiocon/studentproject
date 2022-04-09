@@ -1,0 +1,78 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background: #333940;
+}
+header {
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+header h1 {
+    color: #E867ED;
+    font-size: 2.5em;
+}
+header p {
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+nav {
+  display: flex;
+  background-color: #D8A47F;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section {
+  flex: 0 0 400px;
+  background-color: ;
+  padding: 20px;
+}
+img {
+  width: 100%;
+}
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: auto;
+}
+/* Added some padding and styling for the photos */
+.photo {
+  padding: 20px 10px;
+  border: 2px solid #BFBFBF;
+  background-color: #fff;
+}
+/* We can use rotate to rotate the photo to the left or right */
+.rotate {
+  transform: rotate(7deg);
+}
+/* We can use scale to stretch the photo vertically or horizontally */
+.scale {
+  transform: scale(1.5, 1);
+}
+/* We can use skew to skew the photo to the left or right */
+.skew {
+  transform: skew(15deg);
+}
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+  header {
+    background: #772014;
+  }
+  nav,
+  footer {
+    background-color: #BB8588;
+  }
+}
